@@ -1,4 +1,3 @@
-import torch
 import torch.nn as nn
 from birefnet.models.modules.aspp import ASPP, ASPPDeformable
 from birefnet.config import Config

@@ -5,8 +5,6 @@ from birefnet.config import Config
 from typing import List
 from datetime import datetime
 import shutil
-from PIL import Image
-import numpy as np
 
 config = Config()
 
@@ -133,7 +131,7 @@ def split_dataset(train_ratio: float, val_ratio: float, test_ratio: float, input
     if check:
         print("The images have been split correctly, moving them to the right folders...")
     else:
-        raise ValueError(f"Error splitting the images")
+        raise ValueError("Error splitting the images")
     
     #Rename the images to the new format
     rename_picture_list(found_gt,images,gt_dir)
@@ -192,7 +190,7 @@ def split_dataset(train_ratio: float, val_ratio: float, test_ratio: float, input
         shutil.rmtree(input_dir)
         shutil.rmtree(gt_dir)
     except FileNotFoundError:
-        print(f"Directories already removed or don't exist")
+        print("Directories already removed or don't exist")
 
     print("Dataset split successfully")
 

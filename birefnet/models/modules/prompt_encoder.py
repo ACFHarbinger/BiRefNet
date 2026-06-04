@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from typing import Any, Optional, Tuple, Type
+from typing import Any, Optional, Tuple
 
 
 class PromptEncoder(nn.Module):

@@ -1,8 +1,3 @@
-from PIL import Image
-import matplotlib.pyplot as plt
-import torch
-from torchvision import transforms
-from transformers import AutoModelForImageSegmentation
 import argparse
 import os
 from transformers import pipeline

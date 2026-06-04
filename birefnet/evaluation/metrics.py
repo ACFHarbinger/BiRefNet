@@ -692,7 +692,6 @@ class HCEMeasure(object):
         boundaries = []
         h,w = cond.shape[0:2]
         ind_map = np.zeros((h, w))
-        indep_cnt = 0
 
         for i in range(0, len(bdy_)):
             tmp_bdies = []

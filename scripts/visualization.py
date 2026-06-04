@@ -1,9 +1,7 @@
 import argparse
 from PIL import Image
 import os
-import argparse
 from glob import glob
-import prettytable as pt
 import matplotlib
 import random
 import copy

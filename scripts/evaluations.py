@@ -1,6 +1,5 @@
 import os
 import argparse
-from glob import glob
 import prettytable as pt
 
 from birefnet.evaluation.metrics import evaluator

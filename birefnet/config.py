@@ -1,5 +1,4 @@
 import os
-import math
 from datetime import datetime as dt
 
 #Set the default values for the parameters

@@ -1,17 +1,10 @@
 import torch
 import torch.nn as nn
-from collections import OrderedDict
-import torch
-import torch.nn as nn
 import torch.nn.functional as F
-from torchvision.models import vgg16, vgg16_bn
-from torchvision.models import resnet50
 
 from birefnet.config import Config
-from birefnet.dataset import class_labels_TR_sorted
 from birefnet.models.backbones.build_backbone import build_backbone
 from birefnet.models.modules.decoder_blocks import BasicDecBlk
-from birefnet.models.modules.lateral_blocks import BasicLatBlk
 from birefnet.models.refinement.stem_layer import StemLayer
 
 

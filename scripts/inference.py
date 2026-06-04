@@ -7,7 +7,7 @@ import torch
 import re
 
 from birefnet.dataset import MyData
-from birefnet.models.birefnet import BiRefNet, BiRefNetC2F
+from birefnet.models.birefnet import BiRefNet
 from birefnet.utils import save_tensor_img, check_state_dict
 from birefnet.config import Config
 
