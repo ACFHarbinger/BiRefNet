@@ -4,6 +4,11 @@ from collections import OrderedDict
 from torchvision.models import vgg16, vgg16_bn, VGG16_Weights, VGG16_BN_Weights, resnet50, ResNet50_Weights
 from birefnet.config import Config
 
+# NOTE: these backbone constructors are resolved via eval() below;
+# linters see them as unused but they are load-bearing — do not remove.
+from .pvt_v2 import pvt_v2_b0, pvt_v2_b1, pvt_v2_b2, pvt_v2_b5  # noqa: F401
+from .swin_v1 import swin_v1_t, swin_v1_s, swin_v1_b, swin_v1_l  # noqa: F401
+
 
 config = Config()
 

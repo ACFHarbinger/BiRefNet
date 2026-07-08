@@ -8,6 +8,13 @@ from huggingface_hub import PyTorchModelHubMixin
 from ..config import Config
 from ..dataset import class_labels_TR_sorted
 from ..models.backbones.build_backbone import build_backbone
+
+# NOTE: resolved via eval() (config.dec_blk / lat_blk / dec_att / squeeze_block /
+# refine); linters see these as unused but they are load-bearing — do not remove.
+from ..models.modules.decoder_blocks import BasicDecBlk, ResBlk  # noqa: F401
+from ..models.modules.lateral_blocks import BasicLatBlk  # noqa: F401
+from ..models.modules.aspp import ASPP, ASPPDeformable  # noqa: F401
+from ..models.refinement.refiner import Refiner, RefinerPVTInChannels4, RefUNet  # noqa: F401
 from ..models.refinement.stem_layer import StemLayer
 
 
